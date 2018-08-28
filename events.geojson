@@ -10,10 +10,10 @@
         "title": "{{ place.title }}",
         "url": "{{site.url}}{{place.url}}",
         {% if place.highlight == true %}
-        "marker-color": "#00beec",
+        "marker-color": "#8cc250",
         "marker-size": "large"
         {% else %}
-         "marker-color": "#00beec"
+         "marker-color": "#8cc250"
         {% endif %}
       },
       "geometry": {

@@ -5,15 +5,31 @@
     {
       "type": "Feature",
       "properties": {
-        "title": "example: Map Uganda Mapathon",
-        "url": "http://0.0.0.0:4000/event/mapuganda/",
+        "title": "Mason Mappers Mapathon",
+        "url": "http://0.0.0.0:4000/event/mapoff/",
         
-         "marker-color": "#00beec"
+         "marker-color": "#8cc250"
         
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [32.59427, 0.34192]
+        "coordinates": [-77.30532, 38.82966]
+      }
+    },
+    
+    
+    {
+      "type": "Feature",
+      "properties": {
+        "title": "AoyamaGakuin University Freshers Seminar 2017 Mapathon",
+        "url": "http://0.0.0.0:4000/event/aoyamagaukinuniversity/",
+        
+         "marker-color": "#8cc250"
+        
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [139.6691, 35.8477]
       }
     }
     

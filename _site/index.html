@@ -59,7 +59,7 @@
 
 <div class='fill-dark dark'>
 <div class='site-navigation text-right space col12 pad2'>
-  <a href='/index.html' class='fl logo-text'><span class='text-bold-blue'>#</span><span class='text-white'>osm</span><span class='text-bold-blue'>geo</span><span class='text-white'>week</span></a>
+  <a href='/index.html' class='fl logo-text'><span class='text-green'>#</span><span class='text-white'>osm</span><span class='text-green'>geo</span><span class='text-white'>week</span></a>
   <!-- <a class='strong ' href='/about/'>About</a> -->
   <a class='small ' href='/events/'>Events</a>
   <a class='small ' href='/projects/'>Projects</a>
@@ -104,16 +104,16 @@
   <div class='pad8y dark'>
     <div class='limiter pin-bottom space-bottom8'>
 
-     <h1 class='space-bottom1'>OSM Geography <span class='text-bold-blue'>Awareness</span> Week</h1>
+     <h1 class='space-bottom1'>OSM Geography <span class='text-green'>Awareness</span> Week</h1>
     <p class='prose-big space-bottom1'>Nov 11-17, 2018</p>
-    <p class='col10 margin2r'>Teachers, students, community groups, map lovers, in the US and around the world, join together to celebrate geography and make maps with <a href="http://www.openstreetmap.org/about"><strong><span class='text-bold-blue'>OpenStreetMap</span></strong></a>, the free and openly editable map of the world.</p>
+    <p class='col10 margin2r'>Teachers, students, community groups, map lovers, in the US and around the world, join together to celebrate geography and make maps with <a href="http://www.openstreetmap.org/about"><strong><span class='text-green'>OpenStreetMap</span></strong></a>, the free and openly editable map of the world.</p>
 
     <div style="display:inline" tx-content="translate_urls">
-    <a tx-content="translate_urls" style="font-size: 16px" href="/events/" class='pad2x button fill-bold-blue'>Find an event</a>
+    <a tx-content="translate_urls" style="font-size: 16px" href="/events/" class='pad2x button fill-bold-green'>Find an event</a>
     </div>
 
     <div style="display:inline" tx-content="translate_urls" >
-    <a tx-content="translate_urls" style="font-size: 16px" href="https://docs.google.com/forms/d/1SG9DW7ZyEC9Vf78RbApUfBYAQPSIReyxbupGJPCqjtw/" class='pad2x button fill-bold-blue'>Submit an event</a>
+    <a tx-content="translate_urls" style="font-size: 16px" href="https://docs.google.com/forms/d/1SG9DW7ZyEC9Vf78RbApUfBYAQPSIReyxbupGJPCqjtw/" class='pad2x button fill-bold-green'>Submit an event</a>
     </div>
 
     </div>
@@ -140,7 +140,7 @@
 <div style="display:inline"> On the local level, grassroots organizers around the world are holding over 
 </div>
 
-<span class="notranslate">1</span> 
+<span class="notranslate">2</span> 
 
 <div style="display:inline" tx-content="translate_urls">
 <a href="/events/">events</a> at local schools and community centers during <strong>#osmgeoweek</strong>. If you are organizing an event, or even just thinking about it, get in touch at <a href='mailto:osmgeoweek@gmail.com'>osmgeoweek@gmail.com</a>.
@@ -166,8 +166,11 @@ The <a href="/plan/">Guides</a> are a collection of resources for planning and h
     </div>
     <div class='col6 fill-light round pad2 space-bottom4'>
       
-      <h3><a href="/event/mapuganda/">example: Map Uganda Mapathon</a></h3>
-      <p class='small'> | 9:00am-1:00pm</p>
+      <h3><a href="/event/aoyamagaukinuniversity/">AoyamaGakuin University Freshers Seminar 2017 Mapathon</a></h3>
+      <p class='small'> | </p>
+      
+      <h3><a href="/event/mapoff/">Mason Mappers Mapathon</a></h3>
+      <p class='small'> | 4:00pm - 8:00pm</p>
       
     </div>
     </div>
@@ -188,6 +191,13 @@ The <a href="/plan/">Guides</a> are a collection of resources for planning and h
 
             <h3><a href="/project/volcanos">Example: Volcanic Risk in Colombia</a></h3>
             <p class='small'>Mapping vulnerable communities around Mt. Nevado del Ruiz and Mt. Galeras.</p>
+          
+        
+
+        
+        
+          
+          
           
         
 
@@ -285,7 +295,7 @@ featureLayer.on('layeradd', function(e) {
   feature = marker.feature;
   // Create custom popup content
   var popupContent =  '<a target="_blank" class="popup" href="' + feature.properties.url + '">' +
-  '<h2 class="text-center" style="color: #00beec">'+feature.properties.title+'</h2></a>';
+  '<h2 class="text-center" style="color: #8cc250">'+feature.properties.title+'</h2></a>';
   // http://leafletjs.com/reference.html#popup
   marker.bindPopup(popupContent,{
     minWidth: 200,

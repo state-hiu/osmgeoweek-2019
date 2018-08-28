@@ -90,7 +90,7 @@ featureLayer.on('layeradd', function(e) {
   feature = marker.feature;
   // Create custom popup content
   var popupContent =  '<a target="_blank" class="popup" href="' + feature.properties.url + '">' +
-  '<h2 class="text-center" style="color: #00beec">'+feature.properties.title+'</h2></a>';
+  '<h2 class="text-center" style="color: #8cc250">'+feature.properties.title+'</h2></a>';
   // http://leafletjs.com/reference.html#popup
   marker.bindPopup(popupContent,{
     minWidth: 200,
