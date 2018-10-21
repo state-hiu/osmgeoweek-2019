@@ -7,7 +7,7 @@ var venues = {
     "properties": {
       "description": "<span class=\"small quiet\">Conference Venue | April 12th + 13th</span><br /><span class=\"quiet\">801 Mt Vernon Pl NW</span>",
       "id": "marker-hrb4hnb11",
-      "marker-color": "#4747A3",
+      "marker-color": "#F00",
       "marker-size": "medium",
       "marker-symbol": "star",
       "title": "Washington Convention Center"

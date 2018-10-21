@@ -71,7 +71,7 @@ twitter-description: Sign up for an event near you or plan your own mapathon. Yo
 <div style="display:inline"> On the local level, grassroots organizers around the world are holding over 
 </div>
 
-<span class="notranslate">{{event_counter}}</span> 
+<span class="notranslate" id="event_counter"></span> 
 
 <div style="display:inline" tx-content="translate_urls">
 <a href="{{site.baseurl}}/events/">events</a> at local schools and community centers during <strong>#osmgeoweek</strong>. If you are organizing an event, or even just thinking about it, get in touch at <a href='mailto:osmgeoweek@gmail.com'>osmgeoweek@gmail.com</a>.
@@ -90,45 +90,16 @@ The <a href="{{site.baseurl}}/plan/">Guides</a> are a collection of resources fo
 </div>
   <div class='col12'>
 
+
+
     <div class='col12 clearfix'>
     <div class='col5 margin1r'>
        <a href='{{site.baseurl}}/events/'><h2>Events</h2></a>
         <p>Find an event near you. Or, let us know if you are planning an event, submit the details or get in touch!</p>
     </div>
-    <div class='col6 fill-light round pad2 space-bottom4'>
-      {% for post in site.categories.event reversed limit:3 %}
-      <h3><a href="{{site.baseurl}}/{{post.permalink}}">{{ post.title }}</a></h3>
-      <p class='small'>{{ post.day }} | {{ post.time }}</p>
-      {% endfor %}
-    </div>
-    </div>
+      <div class='col6 fill-light round pad2 space-bottom4' id='insert3events'>
 
-     <div class='col12 clearfix space-bottom4'>
-     <div class='col5 margin1r'>
-        <a href='{{site.baseurl}}/projects/'><h2>Projects</h2></a>
-        <p>Looking for a project to map? Browse a wide variety of projects set-up by OSMGeoWeek supporters.</p>
       </div>
-     <div class='col6 fill-light round pad2'>
-      {% for post in site.categories.project limit:4 %}
-
-        {% assign display = null %}
-        {% assign ready = null %}
-          {% for tag in post.tags %}
-            {% if tag == "remote" %}
-              {% assign display = true %}
-            {% elsif tag == "notfeatured" %}
-              {% assign display = false %}
-            {% endif %}
-          {% endfor %}
-          
-          {% if display == true %}
-
-            <h3><a href="{{site.baseurl}}/{{post.permalink}}">{{ post.title }}</a></h3>
-            <p class='small'>{{ post.subtitle }}</p>
-          {% endif %}
-        {% endfor %}
-
-    </div>
     </div>
 
     <div class='col12 clearfix space-bottom4'>
@@ -149,7 +120,6 @@ The <a href="{{site.baseurl}}/plan/">Guides</a> are a collection of resources fo
             {% endif %}
           {% endfor %}
           {% if display == true %}
-
 
             <h3><a href="{{site.baseurl}}/{{post.permalink}}">{{ post.title }}</a></h3>
             <p class='small'>{{ post.excerpt | markdownify | strip_html | remove: '<p>' | remove: '</p>' }}</p>
@@ -180,3 +150,61 @@ $(function(){
     });
 });
 </script>
+
+
+<script type="text/javascript">
+
+var events;
+
+// use fetch to retrieve it, and report any errors that occur in the fetch operation
+// once the products have been successfully loaded and formatted as a JSON object
+// using response.json(), run the initialize() function
+fetch('https://u14aazd2zf.execute-api.us-east-1.amazonaws.com/dev/events').then(function(response) {
+    if (response.ok) {
+        response.json().then(function(json) {
+            console.log('response is ok');
+            events = json;
+            console.log('print events');
+            console.log(events.length);
+            //initialize();
+
+            events.sort(function(a,b){
+              // Turn your strings into dates, and then subtract them
+              // to get a value that is either negative, positive, or zero.
+              return new Date(b.date) - new Date(a.date);
+            });
+
+            document.querySelector('#event_counter').textContent = events.length;
+
+
+          for (i = 0; i < 3; i++) {
+
+                console.log(events[i]);
+
+                var t = document.querySelector('#mytemplate');
+
+
+                t.content.querySelector('#title').textContent = events[i].mapping_party_name;
+                t.content.querySelector('#date').textContent = events[i].date;
+
+                // add to document DOM
+                var clone = document.importNode(t.content, true); // where true means deep copy
+                document.querySelector('#insert3events').appendChild(clone);
+
+            }
+
+
+        });
+    } else {
+        console.log('Network request for products.json failed with response ' + response.status + ': ' + response.statusText);
+    }
+});
+</script>
+
+
+<template id="mytemplate">
+
+      <h3 id="title"></h3>
+      <p class='small' id="date"></p>
+
+</template>

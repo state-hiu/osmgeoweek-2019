@@ -218,11 +218,11 @@ input[type='submit'],
   .info .item {
     display:block;
     text-decoration:none;
-    color:#fff;
+    color:#F00;
     border-bottom-color:#000;
     }
     .info .item:hover,
-    .info .item.active { color:#fff; background:rgba(0,0,0,0.5); }
+    .info .item.active { color:#F00; background:rgba(0,0,0,0.5); }
     .info .item:last-child { border-bottom:none; }
 
 .marker-dot {

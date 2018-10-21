@@ -18,8 +18,11 @@ L.tileLayer(tileURL, {
     attribution:'<a href="https://www.mapbox.com/about/maps">© Mapbox</a> <a href="http://openstreetmap.org/copyright">© OpenStreetMap</a>'
 }).addTo(map);
 
-var featureLayer = L.mapbox.featureLayer().loadURL('{{ site.baseurl }}/events.geojson',{ style: L.mapbox.simplestyle.style }).addTo(map);
+//var featureLayer = L.mapbox.featureLayer().loadURL('{{ site.baseurl }}/events.geojson',{
+var featureLayer = L.mapbox.featureLayer().loadURL('https://u14aazd2zf.execute-api.us-east-1.amazonaws.com/dev/events_geojson',{  style: L.mapbox.simplestyle.style })
 //var featureLayer = L.geoJson(geojson, { style: L.mapbox.simplestyle.style }).addTo(map);
+
+featureLayer.addTo(map);
 
  featureLayer.on('ready', function() {
   map.fitBounds(featureLayer.getBounds());
@@ -28,12 +31,11 @@ featureLayer.on('layeradd', function(e) {
   var marker = e.layer,
   feature = marker.feature;
   // Create custom popup content
-  var popupContent =  '<a target="_blank" class="popup" href="' + feature.properties.url + '">' +
-  '<h2 class="text-center" style="color: #8cc250">'+feature.properties.title+'</h2></a>';
+  var popupContent = '<h2 class="text-center" style="color: #8cc250">'+feature.properties.mapping_party_name+'</h2>';
   // http://leafletjs.com/reference.html#popup
   marker.bindPopup(popupContent,{
     minWidth: 200,
-    closeButton: false
+    closeButton: false,
   });
 }); 
 </script>
