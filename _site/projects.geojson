@@ -8,7 +8,7 @@
       "type": "Feature",
       "properties": {
         "title": "Example: Volcanic Risk in Colombia",
-        "url": "http://localhost:4000/project/volcanos"
+        "url": "http://0.0.0.0:4000/project/volcanos"
       },
       "geometry": {
         "type": "Polygon",
@@ -45,7 +45,7 @@
       "type": "Feature",
       "properties": {
         "title": "PEPFAR Uganda",
-        "url": "http://localhost:4000/project/pepfar-uganda"
+        "url": "http://0.0.0.0:4000/project/pepfar-uganda"
       },
       "geometry": {
         "type": "Polygon",
