@@ -6,8 +6,8 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <meta property='og:site_name' content='OpenStreetMap - Geography Awareness Week' />
-  <meta property='og:url' content='/swipe/mading/' />
-  <meta property='og:title' content='Mading' />
+  <meta property='og:url' content='project/bouna' />
+  <meta property='og:title' content='Health Centres in Chad' />
   <meta property='og:description' content='' />
   <meta property='og:type' content='website' />
 
@@ -15,7 +15,7 @@
 
   <meta name='twitter:card' content='summary_large_image' />
   <meta name='twitter:site' content='@osmgeoweek' />
-  <meta name='twitter:title' content='Mading' />
+  <meta name='twitter:title' content='Health Centres in Chad' />
   <meta name='twitter:description' content="" />
 
   
@@ -24,7 +24,7 @@
   <meta property='og:image' content='http://osmgeoweek.org/img/twittercard.png' />
   
 
-  <title>Mading | OpenStreetMap Geography Awareness Week</title>
+  <title>Health Centres in Chad | OpenStreetMap Geography Awareness Week</title>
 
   <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300italic,400italic|Montserrat:700|Asap:400,700' rel='stylesheet' type='text/css'>
   
@@ -64,7 +64,7 @@
   <a class='small ' href='/events/'>Events</a>
 
 
-  <a class='small ' href='/projects/'>Projects</a>
+  <a class='small active' href='/projects/'>Projects</a>
 
 
   <a class='small ' href='/guides/'>Guides</a>
@@ -83,57 +83,28 @@
 </div>
 -->
 
-<style>
-  #map { height: 600px; width:100%; }
-.range {
-  position:absolute;
-  width:100%;
-  z-index: 1000;
-  }
-.leaflet-top .leaflet-control-zoom {
-  top:20px;
-  }
-</style>
-
-<div class='fill-green'>
-  <div class='liner clearfix center col12'>
-    <h2 class='pad2'>Mading</h2>
+<div class='fill-green dark center'>
+  <div class='fill-darken3 pad2y'>
+    <div class='limiter'>
+      <h1>Health Centres in Chad</h1>
+    </div>
   </div>
 </div>
 
-
-<input id='range' class='range' type='range' min='0' max='1.0' step='any' />
-<div id='map'></div>
-
-
+<div class='limiter prose pad4y clearfix'>
+  <div class='col8 margin2'>
+    <h2>MSF is supporting health centres in Bouna and Moissala in Chad</h2>
 
 
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JvdW5kdHJ1dGgiLCJhIjoiS21jd2M3NCJ9.Oh7jfB2FCjkVHszCFLS-pg';
-var map = L.map('map');
-L.mapbox.tileLayer('hiu.k8ek57oj').addTo(map);
 
-var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-	var osm = new L.TileLayer(osmUrl, {minZoom: 7, maxZoom: 18, attribution: osmAttrib});	
-var overlay = osm.addTo(map);
-var range = document.getElementById('range');
+<p>MSF is working in Bouna and Moissala in Chad since 2010 to support primary health care and prevention. This MapSwipe project will help MSF in the understanding of where all villages in the Bouna and Moissala health districts are. This will help in in carrying out geo-point sampling procedures for community surveys and a better programming of health activities.</p>
 
-function clip() {
-  var nw = map.containerPointToLayerPoint([0, 0]),
-      se = map.containerPointToLayerPoint(map.getSize()),
-      clipX = nw.x + (se.x - nw.x) * range.value;
+<p><a href="https://tasks.hotosm.org/project/5179">Link to Project Page on Tasking Manager</a></p>
 
-  overlay.getContainer().style.clip = 'rect(' + [nw.y, clipX, se.y, nw.x].join('px,') + 'px)';
-}
 
-range['oninput' in range ? 'oninput' : 'onchange'] = clip;
-map.on('move', clip);
-map.setView([8.77,33.3217], 13);
 
-clip();
-</script>
-
+  </div>
+</div>
 
 
 <div class='pad2x show-mobile'>

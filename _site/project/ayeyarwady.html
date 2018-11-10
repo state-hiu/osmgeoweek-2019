@@ -6,8 +6,8 @@
   <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
 
   <meta property='og:site_name' content='OpenStreetMap - Geography Awareness Week' />
-  <meta property='og:url' content='/swipe/mading/' />
-  <meta property='og:title' content='Mading' />
+  <meta property='og:url' content='project/ayeyarwady' />
+  <meta property='og:title' content='Disaster Preparedness in Mayanmar' />
   <meta property='og:description' content='' />
   <meta property='og:type' content='website' />
 
@@ -15,7 +15,7 @@
 
   <meta name='twitter:card' content='summary_large_image' />
   <meta name='twitter:site' content='@osmgeoweek' />
-  <meta name='twitter:title' content='Mading' />
+  <meta name='twitter:title' content='Disaster Preparedness in Mayanmar' />
   <meta name='twitter:description' content="" />
 
   
@@ -24,7 +24,7 @@
   <meta property='og:image' content='http://osmgeoweek.org/img/twittercard.png' />
   
 
-  <title>Mading | OpenStreetMap Geography Awareness Week</title>
+  <title>Disaster Preparedness in Mayanmar | OpenStreetMap Geography Awareness Week</title>
 
   <link href='https://fonts.googleapis.com/css?family=Alegreya+Sans:300italic,400italic|Montserrat:700|Asap:400,700' rel='stylesheet' type='text/css'>
   
@@ -64,7 +64,7 @@
   <a class='small ' href='/events/'>Events</a>
 
 
-  <a class='small ' href='/projects/'>Projects</a>
+  <a class='small active' href='/projects/'>Projects</a>
 
 
   <a class='small ' href='/guides/'>Guides</a>
@@ -83,57 +83,30 @@
 </div>
 -->
 
-<style>
-  #map { height: 600px; width:100%; }
-.range {
-  position:absolute;
-  width:100%;
-  z-index: 1000;
-  }
-.leaflet-top .leaflet-control-zoom {
-  top:20px;
-  }
-</style>
-
-<div class='fill-green'>
-  <div class='liner clearfix center col12'>
-    <h2 class='pad2'>Mading</h2>
+<div class='fill-green dark center'>
+  <div class='fill-darken3 pad2y'>
+    <div class='limiter'>
+      <h1>Disaster Preparedness in Mayanmar</h1>
+    </div>
   </div>
 </div>
 
-
-<input id='range' class='range' type='range' min='0' max='1.0' step='any' />
-<div id='map'></div>
-
-
+<div class='limiter prose pad4y clearfix'>
+  <div class='col8 margin2'>
+    <h2>The Red Cross is mapping the Ayeyarwady Delta area in Myanmar as part of a multi-year mapping and data readiness activity</h2>
 
 
-<script>
-L.mapbox.accessToken = 'pk.eyJ1IjoiZ3JvdW5kdHJ1dGgiLCJhIjoiS21jd2M3NCJ9.Oh7jfB2FCjkVHszCFLS-pg';
-var map = L.map('map');
-L.mapbox.tileLayer('hiu.k8ek57oj').addTo(map);
 
-var osmUrl='http://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
-	var osmAttrib='Map data © <a href="http://openstreetmap.org">OpenStreetMap</a> contributors';
-	var osm = new L.TileLayer(osmUrl, {minZoom: 7, maxZoom: 18, attribution: osmAttrib});	
-var overlay = osm.addTo(map);
-var range = document.getElementById('range');
+<p>The Red Cross is mapping the Ayeyarwady Delta area in Myanmar as part of a multi-year mapping and data readiness activity to better understand where critical infrastructure and roads are to inform decision making during potential disasters. As recently as 2008 a cyclone killed at least 77,000 people with over 55,900 missing, and left about 2.5 million homeless. The map data will help the Red Cross to better understand where people live in relation to potential hazards so that we can help them be prepared for the disaster and so national decision makers can make better decisions in the immediate aftermath of a disaster.</p>
 
-function clip() {
-  var nw = map.containerPointToLayerPoint([0, 0]),
-      se = map.containerPointToLayerPoint(map.getSize()),
-      clipX = nw.x + (se.x - nw.x) * range.value;
+<p><a href="https://tasks.hotosm.org/project/5355">Link to Missing Maps: Myanmar, NE Pathein District Project Page on Tasking Manager</a></p>
 
-  overlay.getContainer().style.clip = 'rect(' + [nw.y, clipX, se.y, nw.x].join('px,') + 'px)';
-}
+<p><a href="https://tasks.hotosm.org/project/5364">Link to Missing Maps: Myanmar, Maubin District SW Project Page on Tasking Manager</a></p>
 
-range['oninput' in range ? 'oninput' : 'onchange'] = clip;
-map.on('move', clip);
-map.setView([8.77,33.3217], 13);
 
-clip();
-</script>
 
+  </div>
+</div>
 
 
 <div class='pad2x show-mobile'>
