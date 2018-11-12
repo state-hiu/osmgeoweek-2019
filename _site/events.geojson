@@ -6,7 +6,7 @@
       "type": "Feature",
       "properties": {
         "title": "Mason Mappers Mapathon",
-        "url": "http://0.0.0.0:4000/event/mapoff/",
+        "url": "http://localhost:4000/event/mapoff/",
         
          "marker-color": "#8cc250"
         
@@ -22,7 +22,7 @@
       "type": "Feature",
       "properties": {
         "title": "AoyamaGakuin University Freshers Seminar 2017 Mapathon",
-        "url": "http://0.0.0.0:4000/event/aoyamagaukinuniversity/",
+        "url": "http://localhost:4000/event/aoyamagaukinuniversity/",
         
          "marker-color": "#8cc250"
         
