@@ -6,7 +6,7 @@ layout: project
 #thumbnail: '../img/post-images/volcano_colombia.jpg'
 tags:
   - remote
-#permalink: project/embu
+permalink: project/embu
 aoi:
   - north:
     south:
@@ -20,3 +20,4 @@ MSF is supporting health centres in Embu County in Kenya to develop a model of c
 
 
 
+https://tasks.hotosm.org/contribute?difficulty=ALL&text=embu
