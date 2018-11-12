@@ -19,5 +19,3 @@ MSF is supporting health centres in Embu County in Kenya to develop a model of c
 <a href="https://tasks.hotosm.org/contribute?difficulty=ALL&text=embu">Link to Project Page on Tasking Manager</a>
 
 
-
-https://tasks.hotosm.org/contribute?difficulty=ALL&text=embu
