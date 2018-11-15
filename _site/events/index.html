@@ -173,7 +173,7 @@ fetch('https://u14aazd2zf.execute-api.us-east-1.amazonaws.com/dev/events').then(
             events.sort(function(a,b){
               // Turn your strings into dates, and then subtract them
               // to get a value that is either negative, positive, or zero.
-              return new Date(b.date) - new Date(a.date);
+              return new Date(a.date) - new Date(b.date);
             });
 
             for (i = 0; i < events.length; i++) {
