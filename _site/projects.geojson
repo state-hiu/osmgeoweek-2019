@@ -7,43 +7,6 @@
       {
       "type": "Feature",
       "properties": {
-        "title": "Crowd2Map Tanzania",
-        "url": "http://localhost:4000/project/tanzania"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates":[
-          [
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ]
-          ]
-        ]
-      }
-    }
-    
-     
-      
-      ,{
-      "type": "Feature",
-      "properties": {
         "title": "Disaster Preparedness in Mayanmar",
         "url": "http://localhost:4000/project/ayeyarwady"
       },
@@ -81,82 +44,8 @@
       ,{
       "type": "Feature",
       "properties": {
-        "title": "Health Needs in Nigeria",
-        "url": "http://localhost:4000/project/zamfara"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates":[
-          [
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ]
-          ]
-        ]
-      }
-    }
-    
-     
-      
-      ,{
-      "type": "Feature",
-      "properties": {
         "title": "Health Centres in Chad",
         "url": "http://localhost:4000/project/bouna"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates":[
-          [
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ]
-          ]
-        ]
-      }
-    }
-    
-     
-      
-      ,{
-      "type": "Feature",
-      "properties": {
-        "title": "Health Centres in Kenya",
-        "url": "http://localhost:4000/project/embu"
       },
       "geometry": {
         "type": "Polygon",

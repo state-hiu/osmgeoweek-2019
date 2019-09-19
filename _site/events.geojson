@@ -8,7 +8,7 @@
         "title": "Mason Mappers Mapathon",
         "url": "http://localhost:4000/event/mapoff/",
         
-         "marker-color": "#8cc250"
+         "marker-color": "#ff4b4b"
         
       },
       "geometry": {
@@ -24,7 +24,7 @@
         "title": "AoyamaGakuin University Freshers Seminar 2017 Mapathon",
         "url": "http://localhost:4000/event/aoyamagaukinuniversity/",
         
-         "marker-color": "#8cc250"
+         "marker-color": "#ff4b4b"
         
       },
       "geometry": {
