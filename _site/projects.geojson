@@ -7,8 +7,8 @@
       {
       "type": "Feature",
       "properties": {
-        "title": "Disaster Preparedness in Mayanmar",
-        "url": "http://localhost:4000/project/ayeyarwady"
+        "title": "Forecast-based Financing in Indonesia",
+        "url": "http://localhost:4000/project/tegal"
       },
       "geometry": {
         "type": "Polygon",
