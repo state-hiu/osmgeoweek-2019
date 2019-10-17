@@ -8,7 +8,7 @@
       "type": "Feature",
       "properties": {
         "title": "Forecast-based Financing in Indonesia",
-        "url": "http://localhost:4000/project/tegal"
+        "url": "http://0.0.0.0:4000/project/tegal"
       },
       "geometry": {
         "type": "Polygon",
@@ -45,7 +45,7 @@
       "type": "Feature",
       "properties": {
         "title": "Health Centres in Chad",
-        "url": "http://localhost:4000/project/bouna"
+        "url": "http://0.0.0.0:4000/project/bouna"
       },
       "geometry": {
         "type": "Polygon",
@@ -82,7 +82,7 @@
       "type": "Feature",
       "properties": {
         "title": "PEPFAR Uganda",
-        "url": "http://localhost:4000/project/pepfar-uganda"
+        "url": "http://0.0.0.0:4000/project/pepfar-uganda"
       },
       "geometry": {
         "type": "Polygon",
