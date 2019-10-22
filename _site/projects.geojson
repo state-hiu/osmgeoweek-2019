@@ -7,6 +7,43 @@
       {
       "type": "Feature",
       "properties": {
+        "title": "Mapping to Improve Health-related Care in Ouaka, Central African Republic",
+        "url": "http://0.0.0.0:4000/project/car_mapping"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates":[
+          [
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ]
+          ]
+        ]
+      }
+    }
+    
+     
+      
+      ,{
+      "type": "Feature",
+      "properties": {
         "title": "Mapping in Peru for Anemia and Malnutrition",
         "url": "http://0.0.0.0:4000/project/anemia_peru"
       },
