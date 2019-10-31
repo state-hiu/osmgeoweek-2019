@@ -7,6 +7,43 @@
       {
       "type": "Feature",
       "properties": {
+        "title": "Missing Maps: Forecast-based Action in Central Asia",
+        "url": "http://0.0.0.0:4000/project/central_asia"
+      },
+      "geometry": {
+        "type": "Polygon",
+        "coordinates":[
+          [
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ],
+            [
+              ,
+              
+            ]
+          ]
+        ]
+      }
+    }
+    
+     
+      
+      ,{
+      "type": "Feature",
+      "properties": {
         "title": "Mapping to Improve Health-related Care in Ouaka, Central African Republic",
         "url": "http://0.0.0.0:4000/project/car_mapping"
       },
@@ -83,43 +120,6 @@
       "properties": {
         "title": "Forecast-based Financing in Indonesia",
         "url": "http://0.0.0.0:4000/project/tegal"
-      },
-      "geometry": {
-        "type": "Polygon",
-        "coordinates":[
-          [
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ],
-            [
-              ,
-              
-            ]
-          ]
-        ]
-      }
-    }
-    
-     
-      
-      ,{
-      "type": "Feature",
-      "properties": {
-        "title": "Health Centres in Chad",
-        "url": "http://0.0.0.0:4000/project/bouna"
       },
       "geometry": {
         "type": "Polygon",
