@@ -181,9 +181,24 @@ fetch('https://u14aazd2zf.execute-api.us-east-1.amazonaws.com/dev/events').then(
                 t.content.querySelector('#organization').textContent = events[i].org_name;
                 t.content.querySelector('#sign_up_link').textContent = events[i].sign_up_link;
 
-                // add to document DOM
-                var clone = document.importNode(t.content, true); // where true means deep copy
-                document.querySelector('#events').appendChild(clone);
+                // https://www.digitalocean.com/community/tutorials/how-to-modify-attributes-classes-and-styles-in-the-dom
+                t.content.querySelector('#sign_up_link').setAttribute('href', events[i].sign_up_link);
+
+                console.log('print date');
+                console.log(events[i].date);
+
+                var date1 = new Date('11/8/2019');
+
+                console.log('print date1');
+                console.log(date1);
+
+                if (new Date(events[i].date) >= date1) {
+                  // add to document DOM
+                  var clone = document.importNode(t.content, true); // where true means deep copy
+                  document.querySelector('#events').appendChild(clone);
+                }
+
+                
 
             }
 
@@ -212,7 +227,7 @@ fetch('https://u14aazd2zf.execute-api.us-east-1.amazonaws.com/dev/events').then(
 
     <div class='prose schedule'>
       <div>organization: <span id="organization"></span></div>
-      <div>sign-up: <span id="sign_up_link"></span></div>
+      <div>sign-up: <a id="sign_up_link"><span id="sign_up_link"></span></a></div>
     </div>
 
   </div>
